@@ -50,7 +50,7 @@ input[type=submit] {
 }
 
 input[type=submit]:active {
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8)
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
     background-color: var(--dark-accent);
 }
 
@@ -64,7 +64,7 @@ textarea {
     border-radius: 4px;
     border-width: 1px;
     font-size: 1rem;
-    backgorund-color: var(--light-accent);
+    background-color: var(--light-accent);
 }
 
 section {

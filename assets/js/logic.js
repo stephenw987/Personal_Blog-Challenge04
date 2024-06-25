@@ -24,7 +24,7 @@ const handleModeToggle = function () {
     if (mode ==='light') {
         nextMode = 'dark';
     } else {
-        nextmode = 'light'
+        nextMode = 'light'
     }
 
     applyMode(nextMode);
@@ -52,4 +52,4 @@ const saveMode = function (mode) {
 
 applyMode(readMode());
 
-modeBtnEl.addEventListener('click' handleModeToggle);
+modeBtnEl.addEventListener('click', handleModeToggle);

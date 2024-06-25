@@ -28,8 +28,18 @@ const handleFormSubmit = function (event) {
     redirectPage();
 };
 
-const redirectPage = funciton () {
-    location.href = './blog.html';
+const redirectPage = function () {
+    location.href = '././blog.html';
+};
+
+const storeLocalStorage = function (data) {
+    const allBlogs = readLocalStorage();
+
+    allBlogs.push(data);
+
+    const stringData = JSON.stringify(allBlogs);
+    
+    localStorage.setItem('blogs', stringData);
 };
 
 formEl.addEventListener('submit', handleFormSubmit);

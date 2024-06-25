@@ -25,7 +25,7 @@ const renderBlogList = function () {
     }
 
     for (let blog of blogs) {
-        const article = buildElement('article', null, minEl);
+        const article = buildElement('article', null, mainEl);
 
         buildElement('h2',blog.title,article);
         buildElement('blockquote', blog.content, article);
